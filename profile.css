@@ -1,0 +1,293 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(#333, #4d4747); /* Dark gradient background */
+  color: #fff; /* Light text */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+header {
+  background-color: #ffd301; /* Orange header */
+  color: #514c4c;
+  padding: 20px 40px; /* Add padding */
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+header h1 {
+  margin: 20px;
+  font-size: 60px; /* Adjust font size */
+  font-weight: bold; /* Add font weight */
+  
+}
+
+
+nav ul li a {
+  color: #514c4c;
+  text-decoration: none;
+  font-weight: bold; /* Make links bold */
+  padding: 10px 15px; /* Increase padding */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #514c4c; /* Darker background color on hover */
+  color: #000000; /* White text on hover */
+}
+nav {
+  position: fixed; /* Position the navigation bar */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Take up full width */
+  background-color: #ffd301;
+  padding: 20px 0;
+  margin-top: 0; /* Remove top margin */
+  z-index: 999; /* Ensure it appears above other elements */
+}
+
+
+
+.nav-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #514c4c;
+  text-decoration: none;
+}
+
+/* Add padding to the body to compensate for the fixed navigation bar */
+body {
+  padding-top: 50px; /* Adjust according to the height of the navigation bar */
+}
+
+#section {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 60px 0;
+}
+
+.section-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-item {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.section-item h3 {
+  font-size: 24px;
+  color: #333; /* Dark text */
+  margin-bottom: 10px;
+}
+
+.section-item p {
+  font-size: 16px;
+  color: #666; /* Medium-dark text */
+  line-height: 1.6;
+}
+
+
+footer {
+  background-color: #ffd301; /* Orange footer */
+  color: #514c4c;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.profile {
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.profile img {
+  width: 150px; /* Increase the width */
+  height: 150px; /* Increase the height */
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #ffd301; /* Add a border */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
+}
+
+.header-content {
+  float: left;
+  padding-top: 20px;
+}
+
+/* Hover effect for nav links */
+.header-content nav ul li a:hover {
+  color: #ffffff; /* Change text color of nav links on hover */
+}
+
+.project-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  flex-direction: row; /* Ensure left-to-right scroll */
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+.project-card {
+  flex: 0 0 300px; /* Set a fixed width */
+  height: 300px; /* Set a fixed height */
+  margin-right: 20px;
+  scroll-snap-align: start;
+  color: white;
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Apply a slight upward translation on hover */
+  box-shadow: 0 8px 16px rgba(119, 116, 116, 0.1); /* Add a shadow on hover */
+}
+
+.project-info {
+  padding: 10px;
+  color: #333;
+  background-color: #ffffff; /* Light gray */
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ffd301;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s; /* Added transition */
+}
+
+.social-links a:hover {
+  background-color: #ffd301;
+  color: #333;
+}
+
+.social-links img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.education-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.education-card {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 20px;
+  scroll-snap-align: start;
+  background-color: #f9f9f9; /* Light gray */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.education-info {
+  padding: 10px;
+}
+
+.education-info h3 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.education-info p {
+  margin-bottom: 0;
+  color: #666;
+}
+
+#contact p {
+  margin-bottom: 10px;
+}
+#contact {
+  background-color: #333; /* Dark background */
+  color: #fff; /* Light text */
+  padding: 50px 0; /* Adjust padding */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center; /* Center the heading */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block; /* Make labels block elements */
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #fff; /* White border */
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  color: #fff; /* White text */
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #ffd301; /* Orange background */
+  color: #333; /* Dark text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+button[type="submit"]:hover {
+  background-color: #e6bd00; /* Darker orange on hover */
+  color: #fff; /* White text on hover */
+}
+
