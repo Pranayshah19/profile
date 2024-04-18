@@ -2,8 +2,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(#333, #4d4747); /* Dark gradient background */
-  color: #fff; /* Light text */
+  background-image: linear-gradient(#333, #4d4747);
+  color: #fff;
+  word-spacing: 7px;
 }
 
 .container {
@@ -11,48 +12,46 @@ body {
   margin: 0 auto;
   padding: 20px 0;
 }
+
 header {
-  background-color: #ffd301; /* Orange header */
-  color: #514c4c;
-  padding: 20px 40px; /* Add padding */
+  background-color: #ffd301;
+  color: #8b0002;
+  padding: 20px 40px;
   overflow: hidden;
   text-align: left;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
   margin: 20px;
-  font-size: 60px; /* Adjust font size */
-  font-weight: bold; /* Add font weight */
-  
+  font-size: 60px;
+  font-weight: bold;
 }
-
 
 nav ul li a {
   color: #514c4c;
   text-decoration: none;
-  font-weight: bold; /* Make links bold */
-  padding: 10px 15px; /* Increase padding */
-  border-radius: 5px; /* Rounded corners */
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-  background-color: #514c4c; /* Darker background color on hover */
-  color: #000000; /* White text on hover */
+  background-color: #514c4c;
+  color: #000000;
 }
+
 nav {
-  position: fixed; /* Position the navigation bar */
-  top: 0; /* Align it to the top */
-  left: 0; /* Align it to the left */
-  width: 100%; /* Take up full width */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #ffd301;
   padding: 20px 0;
-  margin-top: 0; /* Remove top margin */
-  z-index: 999; /* Ensure it appears above other elements */
+  margin-top: 0;
+  z-index: 999;
 }
-
-
 
 .nav-container {
   width: 80%;
@@ -76,13 +75,12 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* Add padding to the body to compensate for the fixed navigation bar */
 body {
-  padding-top: 50px; /* Adjust according to the height of the navigation bar */
+  padding-top: 50px;
 }
 
 #section {
-  background-color: #f9f9f9; /* Light gray background */
+  background-color: #f9f9f9;
   padding: 60px 0;
 }
 
@@ -96,26 +94,25 @@ body {
   width: 300px;
   margin: 20px;
   padding: 20px;
-  background-color: #fff; /* White background */
+  background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .section-item h3 {
   font-size: 24px;
-  color: #333; /* Dark text */
+  color: #333;
   margin-bottom: 10px;
 }
 
 .section-item p {
   font-size: 16px;
-  color: #666; /* Medium-dark text */
+  color: #666;
   line-height: 1.6;
 }
 
-
 footer {
-  background-color: #ffd301; /* Orange footer */
+  background-color: #ffd301;
   color: #514c4c;
   text-align: center;
   padding: 20px 0;
@@ -128,12 +125,12 @@ footer {
 }
 
 .profile img {
-  width: 150px; /* Increase the width */
-  height: 150px; /* Increase the height */
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   overflow: hidden;
-  border: 5px solid #ffd301; /* Add a border */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  border: 5px solid #ffd301;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .header-content {
@@ -141,37 +138,34 @@ footer {
   padding-top: 20px;
 }
 
-/* Hover effect for nav links */
 .header-content nav ul li a:hover {
-  color: #ffffff; /* Change text color of nav links on hover */
+  color: #ffffff;
 }
 
 .project-container {
   display: flex;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  flex-direction: row; /* Ensure left-to-right scroll */
-  scroll-behavior: smooth; /* Smooth scrolling */
-}
-.project-card {
-  flex: 0 0 300px; /* Set a fixed width */
-  height: 300px; /* Set a fixed height */
-  margin-right: 20px;
-  scroll-snap-align: start;
-  color: white;
+  flex-direction: row;
 }
 
-.project-card:hover {
-  transform: translateY(-10px); /* Apply a slight upward translation on hover */
-  box-shadow: 0 8px 16px rgba(119, 116, 116, 0.1); /* Add a shadow on hover */
+.project-card {
+  flex: 0 0 300px;
+  height: 300px;
+  margin-right: 20px;
+  color: white;
 }
 
 .project-info {
   padding: 10px;
   color: #333;
-  background-color: #ffffff; /* Light gray */
+  background-color: #ffffff;
   border-radius: 10px;
   margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-card:hover .project-info {
+  background-color: #ffd301;
+  color: #333;
 }
 
 .social-links {
@@ -190,7 +184,7 @@ footer {
   align-items: center;
   border: 1px solid #ffd301;
   border-radius: 20px;
-  transition: background-color 0.3s, color 0.3s; /* Added transition */
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .social-links a:hover {
@@ -213,7 +207,7 @@ footer {
   width: 300px;
   margin-right: 20px;
   scroll-snap-align: start;
-  background-color: #f9f9f9; /* Light gray */
+  background-color: #f9f9f9;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -234,13 +228,19 @@ footer {
   color: #666;
 }
 
+.education-card:hover {
+  background-color: #ffd301;
+  color: #333;
+}
+
 #contact p {
   margin-bottom: 10px;
 }
+
 #contact {
-  background-color: #333; /* Dark background */
-  color: #fff; /* Light text */
-  padding: 50px 0; /* Adjust padding */
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
 }
 
 .container {
@@ -249,7 +249,7 @@ footer {
 }
 
 h2 {
-  text-align: center; /* Center the heading */
+  text-align: center;
 }
 
 .form-group {
@@ -257,7 +257,7 @@ h2 {
 }
 
 label {
-  display: block; /* Make labels block elements */
+  display: block;
   margin-bottom: 5px;
 }
 
@@ -266,28 +266,27 @@ input[type="email"],
 textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #fff; /* White border */
+  border: 1px solid #fff;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
-  color: #fff; /* White text */
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
 }
 
 textarea {
-  resize: vertical; /* Allow vertical resizing */
+  resize: vertical;
 }
 
 button[type="submit"] {
   padding: 10px 20px;
-  background-color: #ffd301; /* Orange background */
-  color: #333; /* Dark text */
+  background-color: #ffd301;
+  color: #333;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+  transition: background-color 0.3s, color 0.3s;
 }
 
 button[type="submit"]:hover {
-  background-color: #e6bd00; /* Darker orange on hover */
-  color: #fff; /* White text on hover */
+  background-color: #e6bd00;
+  color: #fff;
 }
-
